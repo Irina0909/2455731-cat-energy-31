@@ -16,7 +16,37 @@
 }
 
 .product-description__item {
-  //
+  padding: 0;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $primary-color;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.product-description__item--healthy::before {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 25px 28px;
+}
+
+.product-description__item--fast::before {
+  background-image: url("../../icons/stack.svg#pulver");
+  background-size: 26px 28px;
+}
+
+.product-description__item--functional::before {
+  background-image: url("../../icons/stack.svg#eat");
+  background-size: 25px 30px;
+}
+
+.product-description__item--productive::before {
+  background-image: url("../../icons/stack.svg#clock");
+  background-size: 26px 31px;
 }
 
 .product-description__text {
@@ -25,44 +55,4 @@
   line-height: 18px;
   color: $primary-color-text;
   text-align: center;
-}
-
-.product-description__item--healthy::before {
-  background-image: url("../../icons/stack.svg#leaf");
-  background-repeat: no-repeat;
-  content: "";
-  display: inline-block;
-  background-size: contain;
-  width: 25px;
-  height: 28px;
-}
-
-.product-description__item--fast::before {
-  background-image: url("../../icons/stack.svg#pulver");
-  background-repeat: no-repeat;
-  content: "";
-  display: inline-block;
-  background-size: contain;
-  width: 26px;
-  height: 28px;
-}
-
-.product-description__item--functional::before {
-  background-image: url("../../icons/stack.svg#eat");
-  background-repeat: no-repeat;
-  content: "";
-  display: inline-block;
-  background-size: contain;
-  width: 25px;
-  height: 30px;
-}
-
-.product-description__item--productive::before {
-  background-image: url("../../icons/stack.svg#clock");
-  background-repeat: no-repeat;
-  content: "";
-  display: inline-block;
-  background-size: contain;
-  width: 26px;
-  height: 31px;
 }

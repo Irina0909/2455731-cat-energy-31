@@ -1,14 +1,14 @@
 .subscribe-form {
-  padding: 13px;
-  border: $secondary-border;
+  //
 }
 
 .subscribe-form__input {
   font-family: $secondary-font;
   font-size: 20px;
-  line-height: auto;
+  line-height: 20px;
   color: $primary-color-text;
   border: 1px solid #e7e7e7;
+  margin-bottom: 16px;
 
   &:hover {
     border: $secondary-border;

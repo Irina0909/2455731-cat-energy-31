@@ -2,13 +2,7 @@
   background-color: $primary-color;
 }
 
-
-.promo__slogan {
-  color: $white;
-  line-height: 20px;
-}
-
-.promo__slogan::before {
+.promo::before {
   background-image: url("../../icons/stack.svg#gift");
   width: 78px;
   height: 80px;
@@ -17,4 +11,9 @@
   background-repeat: no-repeat;
   background-position: center;
   content: "";
+}
+
+.promo__slogan {
+  color: $white;
+  line-height: 20px;
 }
