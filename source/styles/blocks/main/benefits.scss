@@ -41,6 +41,21 @@
   }
 }
 
+.benefits__item--secondary::before {
+  background-image: url("../../icons/stack.svg#cat-pro");
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+  }
+}
 
 .benefits__item--primary::before {
   background-image: url("../../icons/stack.svg#cat-slim");
@@ -58,21 +73,6 @@
   }
 }
 
-.benefits__item--secondary::before {
-  background-image: url("../../icons/stack.svg#cat-pro");
-  width: 67px;
-  height: 50px;
-
-  @media (min-width: $tablet-width) {
-    width: 268px;
-    height: 200px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 134px;
-    height: 100px;
-  }
-}
 
 .benefits__item-title {
   //
@@ -88,6 +88,7 @@
 }
 
 .benefits__card-link {
+  text-decoration: none;
   display: block;
   font-family: $secondary-font;
   line-height: 16px;
@@ -116,4 +117,5 @@
   width: 32px;
   height: 12px;
   background-color: $black;
+  mask-position: 0;
 }

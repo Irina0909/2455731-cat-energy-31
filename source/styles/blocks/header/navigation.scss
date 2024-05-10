@@ -1,9 +1,11 @@
 .navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 
 .navigation__logo {
+  text-decoration: none;
   height: 38px;
 
   @media (min-width: $tablet-width) {
@@ -17,8 +19,15 @@
 
 .navigation__toggle {
   background-color: $secondary-color;
+  position: absolute;
+  display: block;
   padding: 0;
   cursor: pointer;
+  height: 24px;
+  width: 24px;
+  top: 6px;
+  right: 0;
+
 
   &:hover {
     opacity: 0.5;
@@ -39,6 +48,7 @@
   mask-repeat: no-repeat;
   width: 24px;
   height: 24px;
+  position: absolute;
 }
 
 .navigation__toggle--close {
@@ -50,16 +60,17 @@
 }
 
 .navigation__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-grow: 1;
   list-style-type: none;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+
     list-style-type: none;
     text-transform: uppercase;
     padding: 0;
@@ -74,9 +85,22 @@
   }
 }
 
+.navigation__list--open {
+  background-color: $primary-bg;
+  position: absolute;
+  z-index: 2;
+  top: 38px;
+  left: -57px;
+  width: 100vw;
+}
 
 .navigation__item {
-  //
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .navigation__item--current {
@@ -84,12 +108,17 @@
 }
 
 .navigation__link {
+  position: relative;
+  text-decoration: none;
   display: block;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
   color: $black;
   cursor: pointer;
+  padding: 22px 0 24px;
+  text-align: center;
+
 
   &:hover {
     opacity: 0.6;

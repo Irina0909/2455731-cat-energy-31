@@ -8,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     width: 704px;
-    margin: 0 auto;
 
     .navigation__toggle {
       display: none;
@@ -19,7 +18,6 @@
     display: flex;
     justify-content: space-between;
     width: 1220px;
-    margin: 0 auto;
 
     .navigation__toggle {
       display: none;
@@ -28,5 +26,5 @@
 }
 
 .header__navigation {
-  //
+  margin: 13px 0 15px;
 }

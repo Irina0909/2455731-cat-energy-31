@@ -1,6 +1,5 @@
 .button {
   display: inline-block;
-  background-color: $primary-color;
   color: $white;
   font-family: $secondary-font;
   line-height: 20px;
@@ -12,7 +11,10 @@
   padding: 10px 20px;
   cursor: pointer;
   text-align: center;
+}
 
+.button--primary {
+  background-color: $primary-color;
 
   &:hover {
     background-color: #5eaa2f;
@@ -30,10 +32,6 @@
   }
 }
 
-.button--primary {
-  //
-}
-
 .button--secondary {
   background-color: $secondary-bg;
   color: $primary-color-text;
@@ -46,6 +44,7 @@
 }
 
 .button--third {
+  background-color: $primary-color;
   min-height: 56px;
   font-size: 20px;
   line-height: 26px;
