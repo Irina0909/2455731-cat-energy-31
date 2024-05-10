@@ -1,13 +1,20 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  //
 }
 
 .header__container {
+  margin: 13px 0 15px;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 704px;
+    margin-top: 39px;
 
     .navigation__toggle {
       display: none;
@@ -18,13 +25,10 @@
     display: flex;
     justify-content: space-between;
     width: 1220px;
+    margin-top: 55px;
 
     .navigation__toggle {
       display: none;
     }
   }
-}
-
-.header__navigation {
-  margin: 13px 0 15px;
 }

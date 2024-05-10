@@ -8,6 +8,7 @@
   text-decoration: none;
   height: 38px;
 
+
   @media (min-width: $tablet-width) {
     height: 50px;
   }
@@ -68,9 +69,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex-grow: 1;
-
+    justify-content: flex-start;
     list-style-type: none;
     text-transform: uppercase;
     padding: 0;
@@ -89,8 +88,8 @@
   background-color: $primary-bg;
   position: absolute;
   z-index: 2;
-  top: 38px;
-  left: -57px;
+  top: 52px;
+  left: -20px;
   width: 100vw;
 }
 
@@ -108,7 +107,6 @@
 }
 
 .navigation__link {
-  position: relative;
   text-decoration: none;
   display: block;
   font-family: $secondary-font;
@@ -132,5 +130,6 @@
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+    padding: 0;
   }
 }
