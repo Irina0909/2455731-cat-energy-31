@@ -2,7 +2,29 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 709px;
+    margin-top: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $tablet-width) {
+    .navigation__toggle {
+      display: none;
+    }
+  }
 }
+
 
 .navigation__logo {
   text-decoration: none;
@@ -47,9 +69,6 @@
 .navigation__toggle--open {
   mask-image: url("../../icons/stack.svg#button-open-mobile");
   mask-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  position: absolute;
 }
 
 .navigation__toggle--close {
@@ -66,23 +85,30 @@
   padding: 0;
   margin: 0;
 
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     list-style-type: none;
     text-transform: uppercase;
     padding: 0;
-    width: 436px;
+    max-width: 436px;
   }
 
   @media (min-width: $desktop-width) {
     list-style-type: none;
     text-transform: uppercase;
     padding: 0;
-    width: 475px;
+    max-width: 475px;
   }
 }
+
+//.navigation__list:not(.navigation__toggle--open) {
+// @media (min-width: $mobile-with-only) {
+//  display: none;
+// }
+//}
 
 .navigation__list--open {
   background-color: $primary-bg;
@@ -91,6 +117,11 @@
   top: 52px;
   left: -20px;
   width: 100vw;
+
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .navigation__item {
@@ -99,12 +130,34 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    position: relative;
   }
 }
 
 .navigation__item--current {
-  //
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 64px;
+      height: 2px;
+      background-color: $accent-border-color;
+      top: 46px;
+      left: 5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      background-color: $white;
+      width: 68px;
+      top: 49px;
+      left: 5px;
+    }
+  }
 }
+
 
 .navigation__link {
   text-decoration: none;
@@ -129,7 +182,14 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    text-align: center;
-    padding: 0;
+    padding: 14px 5px 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $white;
+    background-color: aquamarine;
+    padding: 20px 5px 10px;
   }
 }

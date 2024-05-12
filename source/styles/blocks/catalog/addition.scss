@@ -7,7 +7,8 @@
 }
 
 .addition__title {
-  //
+  border-bottom: $secondary-border;
+  padding-bottom: 36px;
 }
 
 .addition__list {
@@ -16,9 +17,9 @@
 }
 
 .addition__item {
-  //
+  border-bottom: $secondary-border;
 }
 
 .addition__item-card {
-  margin-bottom: 25px;
+  //
 }

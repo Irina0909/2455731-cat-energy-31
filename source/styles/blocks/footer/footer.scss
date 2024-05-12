@@ -1,12 +1,9 @@
 .footer {
   background-color: $secondary-bg;
-  display: flex;
   padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     padding: 55px 0;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +20,6 @@
 
 .footer__logo {
   text-decoration: none;
-  display: block;
   color: $accent-color-text;
 
   &:hover,
@@ -38,7 +34,9 @@
 
 .footer__logo-text {
   display: flex;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -46,8 +44,7 @@
 }
 
 .footer__social {
-  display: flex;
-  justify-content: center;
+  //
 }
 
 .footer__developer {

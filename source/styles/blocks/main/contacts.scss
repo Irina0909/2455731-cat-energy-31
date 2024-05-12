@@ -4,6 +4,9 @@
 
 .contacts__container {
   display: flex;
+  flex-wrap: wrap;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -16,8 +19,8 @@
   color: $accent-color-text;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  width: 120px;
+  min-width: 140px;
+  text-align: left;
 }
 
 .contacts__text {
@@ -27,7 +30,7 @@
   font-style: normal;
   margin: 0;
   padding: 0;
-  width: 120px;
+  text-align: left;
 }
 
 .contacts__map {

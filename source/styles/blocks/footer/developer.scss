@@ -1,10 +1,11 @@
 .developer {
-  display: flex;
+  //
 }
 
 .developer__link {
+  display: flex;
+  justify-content: space-between;
   text-decoration: none;
-  display: block;
   color: $primary-color-text;
   line-height: 20px;
 
@@ -27,7 +28,6 @@
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-  margin: 0 0 0 95px;
   background-color: $secondary-color-2;
 }
 
