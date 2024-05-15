@@ -111,12 +111,14 @@
 //}
 
 .navigation__list--open {
+  //@media (min-width: $mobile-with-only) {
   background-color: $primary-bg;
   position: absolute;
-  z-index: 2;
-  top: 52px;
+  z-index: 1;
+  top: 53px;
   left: -20px;
   width: 100vw;
+  //display: none;
 
 
   @media (min-width: $tablet-width) {

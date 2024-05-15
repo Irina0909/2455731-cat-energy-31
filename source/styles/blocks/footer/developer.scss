@@ -17,7 +17,13 @@
   &:active {
     opacity: 0.4;
   }
+
+  @media (min-width: $tablet-width) {
+    min-width: 168px;
+    align-items: center;
+  }
 }
+
 
 .developer__link::after {
   mask-image: url("../../icons/stack.svg#logo-html");

@@ -10,27 +10,31 @@
   text-align: left;
   margin: 27px 0 41px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 84px;
+    padding: 0;
+  }
 }
 
 .catalog__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 - 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
     grid-gap: 60px;
+    margin: 0 0 74px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: repeat(4, 245px);
     gap: 63px 80px;
   }
 }
 
 .catalog__item {
-  border-top: 1px solid #000000;
+  //
 }
-

@@ -1,21 +1,30 @@
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   border-top: $primary-border;
   border-bottom: $primary-border;
   padding: 20px 0;
 
+
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 0;
+    padding: 7px 0 0;
+    min-width: 132px;
   }
 }
 
-.social__item:not(:last-of-type) {
-  margin-right: 24px;
+.social__item {
+  @media (min-width: $tablet-width) {
+    //
+  }
 }
+
+//.social__item:not(:last-child) {
+// margin-right: 24px;
+//}
+
 
 .social__link {
   text-decoration: none;
