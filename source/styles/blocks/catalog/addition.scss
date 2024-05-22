@@ -3,7 +3,10 @@
 }
 
 .addition__container {
-  //
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .addition__title {
@@ -21,6 +24,8 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 72px;
     text-align: left;
+    min-width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -36,11 +41,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 96px;
+    margin: 0 81px 96px;
     border: none;
     border-top: $secondary-border;
-    //display: flex;
-    // flex-wrap: wrap;
+    min-width: 75px;
     padding: 0;
   }
 }

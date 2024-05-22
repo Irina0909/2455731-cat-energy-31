@@ -13,7 +13,6 @@
     border: none;
     padding: 0 37px 40px;
     background: linear-gradient(to bottom, rgb(255, 255, 255)  0% 13%, #f2f2f2 13%, #f2f2f2 87%);
-    min-height: 511px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,16 +29,23 @@
   padding: 0 36px;
 
   @media (min-width: $tablet-width) {
-    //margin-bottom: 22px;
+
     padding: 0;
     margin: 0 auto;
-    object-position: center;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .catalog-card__picture {
   @media (min-width: $tablet-width) {
-    object-fit: scale-down;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 }
 
@@ -71,23 +77,20 @@
 }
 
 .catalog-card__list {
-  margin: 0;
+  margin: 0 0 20px;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+  & span {
+    display: block;
   }
 }
 
 .catalog-card__item {
   display: flex;
-  //flex-wrap: wrap;
   width: 100%;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    //display: inline-block;
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
@@ -124,21 +127,21 @@
 }
 
 .catalog-card--secondary {
-  display: flex;
-  flex-wrap: wrap;
+  //display: flex;
+  //flex-wrap: wrap;
   padding: 25px 20px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
     border: 1px solid #f2f2f2;
-    margin: 0;
+    margin: 57px 0 0;
     background: none;
     padding: 50px 37px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    //
+    margin: 50px 0 0;
   }
 }
 
@@ -217,7 +220,7 @@
   @media (min-width: $tablet-width) {
     min-width: 250px;
     max-height: 40px;
-    margin: 32px 0 0;
+    margin: auto 0 0;
   }
 
   @media (min-width: $desktop-width) {

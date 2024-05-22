@@ -6,15 +6,11 @@
 
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 709px;
+    //
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 1220px;
+    //
   }
 
   @media (min-width: $tablet-width) {
@@ -39,8 +35,7 @@
 }
 
 .navigation__toggle {
-  background-color: $secondary-color;
-  //color: none;
+  background-color: $black;
   display: inline-block;
   content: "";
   mask-size: contain;
@@ -130,6 +125,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     position: relative;
+    margin-left: -9px;
   }
 }
 

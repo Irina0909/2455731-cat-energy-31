@@ -18,7 +18,6 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../images/promo-tablet@1x.png");
     max-width: 707px;
-    max-height: 200px;
     padding: 57px 125px 60px 77px;
     display: flex;
     align-items: center;
@@ -32,9 +31,9 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../../images/promo-pc@1x.png");
-    max-width: 245px;
-    max-height: 288px;
     padding: 56px 42px 43px;
+    max-width: 25%;
+
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/promo-pc@2x.png");
@@ -79,6 +78,7 @@
 
 
     @media (min-width: $desktop-width) {
+      margin: 0 auto;
       text-align: center;
     }
   }

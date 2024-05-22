@@ -18,6 +18,10 @@
   margin: 0 0 40px;
   padding: 0;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .product-description__list {
@@ -141,6 +145,7 @@
     font-family: $secondary-font;
     font-weight: 400;
     color: #f2f2f2;
+   
   }
 }
 
