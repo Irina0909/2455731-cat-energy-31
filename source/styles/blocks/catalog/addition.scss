@@ -6,17 +6,16 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .addition__title {
-  border-bottom: $secondary-border;
   padding-bottom: 35px;
   margin: 0;
 
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
     margin: 0 0 80px 40px;
     padding: 0;
   }
@@ -24,8 +23,8 @@
   @media (min-width: $desktop-width) {
     margin: 0 0 72px;
     text-align: left;
-    min-width: 100%;
-    max-width: 100%;
+    //min-width: 100%;
+    //max-width: 100%;
   }
 }
 
@@ -33,18 +32,18 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  border-top: $secondary-border;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 70px;
     border: $secondary-border;
-    max-width: 896px;
+    //max-width: 896px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 81px 96px;
+    margin: 0 41px 96px 0;
     border: none;
     border-top: $secondary-border;
-    min-width: 75px;
     padding: 0;
   }
 }
