@@ -6,7 +6,8 @@
 
 
   @media (min-width: $tablet-width) {
-    //
+    justify-content: start;
+    gap: 33px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,28 +129,6 @@
   }
 }
 
-.navigation__item--current {
-  @media (min-width: $tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      display: inline-block;
-      width: calc(100% - 10px);
-      height: 2px;
-      background-color: $accent-border-color;
-      top: 46px;
-      left: 5px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &::after {
-      top: 49px;
-      left: 5px;
-    }
-  }
-}
-
 .navigation__link {
   text-decoration: none;
   display: block;
@@ -174,18 +153,44 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    padding: 14px 5px 12px;
+    padding: 13px 5px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    padding: 19px 5px 11px;
+    padding: 19px 5px;
   }
 }
 
-.navigation__link--secondary {
+.navigation__link--current {
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: calc(100% - 10px);
+      height: 2px;
+      background-color: $accent-border-color;
+      top: 45px;
+      left: 5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 49px;
+      left: 5px;
+    }
+  }
+}
+
+.navigation__link--light {
   @media (min-width: $desktop-width) {
     color: $white;
+
+    &::after {
+      background-color: $white;
+    }
   }
 }
