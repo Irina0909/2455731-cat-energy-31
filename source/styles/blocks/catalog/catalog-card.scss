@@ -5,6 +5,8 @@
   padding: 20px 20px 25px;
   border-top: 1px solid #ebebeb;
   margin: 0;
+  height: 209px;
+
 
   & span {
     margin-left: 3px;
@@ -15,6 +17,7 @@
     flex-wrap: wrap;
     border: none;
     padding: 0 37px 40px;
+    height: 511px;
     background: linear-gradient(to bottom, rgb(255, 255, 255)  0% 13%, #f2f2f2 13%, #f2f2f2 87%);
   }
 
