@@ -11,8 +11,14 @@
   margin: 27px 0 0;
   color: $black;
 
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 84px;
+    margin: 65px 0 84px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 74px 0 84px;
     padding: 0;
   }
 
