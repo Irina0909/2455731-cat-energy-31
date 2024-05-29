@@ -2,11 +2,9 @@
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 55px 48px auto;
-  padding: 20px 20px 25px;
+  padding: 22px 20px 25px;
   border-top: 1px solid #ebebeb;
   margin: 0;
-  height: 209px;
-
 
   & span {
     margin-left: 2px;
@@ -16,7 +14,6 @@
     display: block;
     border: none;
     padding: 0 37px 40px;
-    height: 511px;
     background: linear-gradient(to bottom, rgb(255, 255, 255)  0% 16%, #f2f2f2 16%, #f2f2f2 84%);
   }
 
@@ -112,12 +109,15 @@
   width: 100%;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: -2px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     border-bottom: 1px solid #cdcdcd;
     padding: 5px 0 4px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,7 +129,7 @@
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  width: 40%;
+  width: 30%;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -140,7 +140,7 @@
 .catalog-card__item-text {
   display: flex;
   justify-content: flex-end;
-  width: 60%;
+  width: 70%;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -192,10 +192,6 @@
   }
 }
 
-.catalog-card__wrapper {
-  //
-}
-
 .catalog-card__text {
   font-family: $secondary-font;
   font-weight: $font-weight-normal;
@@ -238,7 +234,7 @@
 
 .catalog-card__button {
   text-decoration: none;
-  margin-top: 17px;
+  margin-top: 19px;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {

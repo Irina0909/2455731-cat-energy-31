@@ -1,8 +1,4 @@
 .contacts {
-  @media (min-width: $tablet-width) {
-    //
-  }
-
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -14,11 +10,6 @@
   @media (min-width: $desktop-width) {
     background-color: $primary-bg;
   }
-}
-
-
-.contacts__container {
-  //
 }
 
 .contacts__info {
@@ -37,7 +28,7 @@
     min-width: 565px;
     min-height: 199px;
     position: absolute;
-    bottom: 110px;
+    top: 95px;
     background-color: $primary-bg;
   }
 }
@@ -96,17 +87,15 @@
 
 .contacts__map {
   display: block;
-  height: 100%;
+  height: 362px;
 
   & iframe {
     width: 100%;
-    height: 362px;
+    height: 100%;
     border: none;
   }
 
   @media (min-width: $tablet-width) {
-    & iframe {
-      height: 400px;
-    }
+    height: 400px;
   }
 }

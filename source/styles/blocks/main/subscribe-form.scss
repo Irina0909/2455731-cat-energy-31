@@ -1,9 +1,3 @@
-.subscribe-form {
-  @media (min-width: $tablet-width) {
-    //
-  }
-}
-
 .subscribe-form__input {
   font-family: $secondary-font;
   font-weight: $font-weight-normal;
@@ -28,7 +22,6 @@
     opacity: 0.1;
   }
 
-
   @media (min-width: $tablet-width) {
     min-width: 376px;
     margin: 0;
@@ -38,7 +31,6 @@
     min-width: 496px;
   }
 }
-
 
 .subscribe__button {
   min-width: 280px;

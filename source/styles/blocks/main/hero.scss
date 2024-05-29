@@ -1,14 +1,17 @@
 .hero {
-  background: image-set("../../images/hero-bg-mobile@1x.png" type("image/png"), "../../images/hero-bg-mobile@1x.webp" type("image/webp")), linear-gradient(to bottom, #62a53e 64%, #ffffff 65%, #ffffff 36%);
+  background:
+    image-set(
+      linear-gradient(to bottom, #62a53e 63%, #ffffff 63%, #ffffff 37%),
+      ("../../images/hero-bg-mobile@1x.webp") type("image/webp") 1x,
+      ("../../images/hero-bg-mobile@2x.webp") type("image/webp") 2x
+      ("../../images/hero-bg-mobile@1x.png") type("image/png") 1x,
+      ("../../images/hero-bg-mobile@2x.png") type("image/png") 2x
+    );
+
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 320px auto, 320px 302px;
   background-position: center top;
   padding: 27px 0 0;
-
-  @media (min-resolution: 2dppx) {
-    background: image-set("../../images/hero-bg-mobile@2x.png" type("image/png"), "../../images/hero-bg-mobile@2x.webp" type("image/webp")), linear-gradient(to bottom, #62a53e 64%, #ffffff 65%, #ffffff 36%);
-    background-size: 320px auto;
-  }
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -24,9 +27,16 @@
     &::before {
       position: absolute;
       content: "";
-      background: image-set("../../images/hero-bg-pc-1@1x.png" type("image/png"), "../../images/hero-bg-pc@1x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
+      background:
+        linear-gradient(rgba(#62a53e, 0.6), rgba(#62a53e, 0.6)),
+        image-set(
+          ("../../images/hero-bg-pc-1@1x.webp") type("image/webp") 1x,
+          ("../../images/hero-bg-pc-1@2x.webp") type("image/webp") 2x,
+          ("../../images/hero-bg-pc-1@1x.png") type("image/png") 1x,
+          ("../../images/hero-bg-pc-1@2x.png") type("image/png") 2x
+        );
+      //linear-gradient(#62a53e 720px 694px);
       background-size: cover;
-      background-position: auto 694px, auto auto;
       background-repeat: no-repeat;
       display: block;
       height: calc(100% + 131px);
@@ -35,18 +45,7 @@
       top: -131px;
       bottom: 0;
     }
-
-    @media (min-resolution: 2dppx) {
-      &::before {
-        background: image-set("../../images/hero-bg-pc@2x.png" type("image/png"), "../../images/hero-bg-pc@2x.webp" type("image/webp")), linear-gradient(#62a53e 720px 694px);
-        background-size: 720px auto;
-      }
-    }
   }
-}
-
-.hero__container {
-  //
 }
 
 .hero__content {
@@ -123,6 +122,7 @@
 .hero__button {
   text-decoration: none;
   min-width: 280px;
+  margin-top: 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -4,15 +4,6 @@
   background-color: $white;
   align-items: center;
 
-
-  @media (min-width: $tablet-width) {
-    //
-  }
-
-  @media (min-width: $desktop-width) {
-    //
-  }
-
   @media (min-width: $tablet-width) {
     .navigation__toggle {
       display: none;
@@ -43,6 +34,7 @@
   mask-position: center;
   padding: 0;
   cursor: pointer;
+  border: none;
 
   &:hover {
     opacity: 0.5;
@@ -81,7 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 440px;
+    max-width: 438px;
     gap: 33px;
   }
 

@@ -1,13 +1,4 @@
-.benefits {
-  //
-}
-
-.benefits__container {
-  //
-}
-
 .benefits__list {
-
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -25,9 +16,8 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $secondary-bg;
-  min-height: 266px;
-  margin-bottom: 20px;
-  padding: 23px 24px 18px 20px;
+  margin-bottom: 21px;
+  padding: 23px 24px 22px 20px;
 
   &::before {
     display: inline-block;
@@ -48,7 +38,7 @@
     }
 
     &:last-child {
-      margin-bottom: 45px;
+      margin-bottom: 44px;
     }
 
     &::before {
@@ -85,17 +75,11 @@
   }
 }
 
-//.benefits__item--secondary {
-// @media (min-width: $desktop-width) {
-//   padding-left: 39px;
-// }
-//}
-
 .benefits__item--secondary::before {
   background-image: url("../../icons/stack.svg#cat-pro");
   width: 67px;
   height: 50px;
-  margin: 0 8px 17px -4px;
+  margin: 0 8px 24px -4px;
 
 
   @media (min-width: $tablet-width) {
@@ -123,7 +107,7 @@
   background-image: url("../../icons/stack.svg#cat-slim");
   width: 50px;
   height: 53px;
-  margin: 0 21px 17px 0;
+  margin: 0 21px 19px 0;
 
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -139,7 +123,7 @@
 }
 
 .benefits__item-title {
-  margin-top: 4px;
+  margin-top: 6px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -162,7 +146,7 @@
   text-align: left;
   margin: 0;
   border-bottom: $primary-border;
-  padding-bottom: 15px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -193,7 +177,7 @@
   line-height: 16px;
   color: $black;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 17px;
   align-items: center;
 
 
