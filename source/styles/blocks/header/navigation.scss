@@ -80,10 +80,6 @@
     gap: 33px;
   }
 
-  @media (min-width: $desktop-width) {
-    //
-  }
-
   @media (max-width: $mobile-width-only) {
     &--open {
       position: absolute;
@@ -97,7 +93,12 @@
   //@media (min-width: $tablet-width) {
   // position: static;
   // background: none;
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+  }
 }
+
 
 @media (max-width: $mobile-width-only) {
   .navigation__toggle--closed + .navigation__list--open {
@@ -172,7 +173,7 @@
 
 .navigation__link--light {
   @media (min-width: $desktop-width) {
-    color: $black;
+    color: $white;
 
     &::after {
       background-color: $white;

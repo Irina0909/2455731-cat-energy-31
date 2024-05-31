@@ -1,10 +1,7 @@
 .promo {
   display: flex;
   flex-wrap: wrap;
-  padding: 59px 43px 60px;
-  max-width: 280px;
-  max-height: 290px;
-
+  padding: 59px 61px 43px 58px;
   background-image:
     image-set(
       ("../../images/promo-mobile@1x.webp") type("image/webp") 1x,
@@ -15,7 +12,7 @@
   background-color: linear-gradient(#62a53e);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 280px auto;
+  background-size: 100% auto;
 
 
   @media (min-width: $tablet-width) {
@@ -44,8 +41,9 @@
       );
     padding: 56px 42px 43px;
     max-width: 245px;
+    max-height: 288px;
     margin: 0;
-    background-size: 245px auto;
+    background-size: 100% auto;
   }
 
   &::before {

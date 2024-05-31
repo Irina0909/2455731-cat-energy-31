@@ -53,10 +53,10 @@
       background-size: auto 100%;
       background-position: center left;
       background-repeat: no-repeat;
-      display: block;
-      height: calc(100% + 131px);
+      display: inline-block;
+      height: calc(100% + 115px);
       width: 50%;
-      inset: -131px 0 0 50%;
+      inset: -115px 0 0 50%;
       z-index: 0;
     }
   }
@@ -73,7 +73,7 @@
     display: block;
     padding-left: 80px;
     position: relative;
-    width: fit-content;
+    width: 450px;
   }
 }
 
